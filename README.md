@@ -13,16 +13,16 @@ After the second week, we ran out of stuff to talk about, so we started doing tr
 
 Steps to make this work:
 - Get these files onto your computer (clone/fork the repo, copy/paste the code, anything to get it onto your machine)
-- Replace players/answers specific to my family with players/answers specific to your interest
-- Navigate to the file via command line (for Mac users, open Terminal and navigate to the files on your computer
-- Type the following and you can play the game from command line: `python hangman.py`
+- Replace players/answers/themes/hints in `custom_words.py` specific to my family with players/answers/themes/hints relevant to you
+- Navigate to the folder with these files via command line (for Mac users, open Terminal and cd into the folder that contains these files)
+- Type the following, then play the game from command line: `python hangman.py`
 
-Here, fun is a function of how well you made your answers, themes, and clues. For good gameplay, you should consider the statistical character of your answers (short strings with repeating and with uncommon characters are harder to guess, for example).
+Here, the fun is a function of how well you make your answers, themes, and clues. For good gameplay, you should consider the statistical character of your answers (short strings with repeating and with uncommon characters are harder to guess, for example).
 
 Rather than enumerate an incomplete list of principles of good answers, let me provide some examples:
-- "Deutsch Lietuviu Italiana English" —> clue for my uncle, about languages my grandma is fluent in.
+- "Deutsch Lietuviu Italiana English" —> clue for my uncle, about languages my grandma is fluent in. Notice that "German" is spelled in German, which is to say "Deutsch"
 - "accordian guitar piano" —> clue for my cousin (who's into music), about musical instruments played by her mom + siblings, and the clue is "Exactly 2/3 of these are cool."
-- "Tippy Chloe Max Bowie Mugsy Tilly Chance Elvis Layla Ace" —> clue for my grandma about the dogs we've had in the family. Notice, since there are so many letters, it will be harder to fail.
+- "Tippy Chloe Max Bowie Mugsy Tilly Chance Elvis Layla Ace" —> clue for my grandma about the dogs we've had in the family. Notice, since there are so many letters, it will be harder to exhaust all six tries.
 
 If you have suggestions for added functionality or improvement in general, please share!
 
