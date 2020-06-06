@@ -5,6 +5,8 @@ TL;DR: Play hangman from command line interface. But unlike normal hangman where
 - create custom answers and hints
 - create custom messaging ("Oh no, looks like you're out of guesses" versus "You guessed that letter already, dummy"
 
+image TK
+
 During the COVID-19 crisis, my family started having weekly video conferencing calls where we'd talk about Netflix shows and current events.
 
 After the second week, we ran out of stuff to talk about, so we started doing trivia. This has been super fun, but I thought it'd be funner (this is now a word, pedants) to make a simple computer game to structure our play.
