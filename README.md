@@ -23,7 +23,7 @@ Here, the fun is a function of how well you make your answers, themes, and clues
 
 Rather than enumerate an incomplete list of principles of good answers, let me provide some examples:
 - "Deutsch Lietuviu Italiana English" —> assigned to my uncle, about languages my grandma fluently speaks.
-- "accordian guitar piano" —> clue for my cousin (who's into music), about musical instruments played by her mom + siblings, and the clue is "Exactly 2/3 of these are cool."
+- "accordian guitar piano" —> assigned to my cousin (who's into music), about musical instruments played by her mom/aunt/uncle, and the clue is "Exactly 2/3 of these are cool."
 - "Tippy Chloe Max Bowie Mugsy Tilly Chance Elvis Layla Ace" —> clue for my grandma about the dogs we've had in the family. Notice, since there are so many letters, it will be harder to exhaust all six tries (basically guaranteed to win).
 
 If you have suggestions for added functionality or improvement in general, please share!
