@@ -1,5 +1,7 @@
-import random
 from custom_words import shuffled_answers
+
+title = 'Family Hang(man) Time!'
+prompt = "Guess a letter: "
 
 def answerer():
     answer = shuffled_answers.popitem()
@@ -21,22 +23,27 @@ def play(word, player, theme, hint):
         word_completion += "_" * len(holder[0]) + "\n"
         counter -= 1
         holder.pop(0)
-    print("\nFamily Hangman Time!")
+    print(f"\n{title}")
     print(display_hangman(tries))
     print(word_completion)
     print('\n')
     print(player)
     while not guessed and tries > 0:
-        guess = input("Guess a letter or a word: ").upper()
+        guess = input(prompt).upper()
+
+        reguess = f"You already guessed '{guess}', dummy."
+        wrong = f"No! '{guess}' is NOT in the word."
+        right = f"You got lucky...'{guess}' is in the word"
+
         if len(guess) == 1 and guess.isalpha():
             if guess in guessed_letters:
-                print(f"You already guessed '{guess}', loser.")
+                print(reguess)
             elif guess not in word:
-                print(f"No! '{guess}' is NOT in the word.")
+                print(wrong)
                 tries -= 1
                 guessed_letters.append(guess)
             else:
-                print(f"You got lucky...'{guess}' is in the word")
+                print(right)
                 guessed_letters.append(guess)
                 word_as_list = list(word_completion)
                 indices = [i for i, letter in enumerate(word) if letter == guess]
@@ -48,11 +55,9 @@ def play(word, player, theme, hint):
         elif guess == '?':
             tries -= 1
             print(hint)
-        elif len(guess) > 1 and len(guess) != len(word):
-            print(f"'{guess}' hasn't got the right amount of letters. I know, counting is hard...")
         elif len(guess) == len(word) and guess.isalpha():
             if guess in guessed_words:
-                print(f"You already guessed '{guess}', dummy")
+                print(reguess)
             if guess != word:
                 print(f"Ha! Nice try, '{guess}' is not the word. Maybe stick with letters, it's easier.")
             else:
@@ -75,8 +80,7 @@ def display_hangman(tries):
                 """
                    --------
                    |      |
-                   |      O
-                   |     \\|/
+                   |     \\O/
                    |      |
                    |     / \\
                    -
@@ -85,9 +89,9 @@ def display_hangman(tries):
                 """
                    --------
                    |      |
-                   |      O
-                   |     \\|/
-                   |     /
+                   |     \\O
+                   |      |
+                   |     / \\
                    -
                 """,
                 # head, torso, and both arms
@@ -95,8 +99,8 @@ def display_hangman(tries):
                    --------
                    |      |
                    |      O
-                   |     \\|/
-                   |
+                   |      |
+                   |     / \\
                    -
                 """,
                 # head, torso, and one arm
@@ -104,8 +108,8 @@ def display_hangman(tries):
                    --------
                    |      |
                    |      O
-                   |     \\|
-                   |
+                   |      |
+                   |       \\
                    -
                 """,
                 # head and torso
