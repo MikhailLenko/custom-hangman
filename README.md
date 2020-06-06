@@ -1,4 +1,4 @@
-# custom-hangman
+# Make my own Hangman
 
 TL;DR: Play hangman from command line interface. But unlike normal hangman where you guess a single generic word ('doorbell'), you are able to:
 - assign players to specific answers 
