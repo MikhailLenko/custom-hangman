@@ -32,7 +32,7 @@ def play(word, player, theme, hint):
         guess = input(prompt).upper()
 
         reguess = f"You already guessed '{guess}', dummy."
-        wrong = f"No! '{guess}' is NOT in the word."
+        wrong = f"No! '{guess}' is NOT in the word. Type '?' if you need a hint, but it will cost a limb."
         right = f"You got lucky...'{guess}' is in the word"
 
         if len(guess) == 1 and guess.isalpha():
