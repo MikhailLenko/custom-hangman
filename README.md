@@ -5,7 +5,7 @@ TL;DR: Play hangman from command line interface. But unlike normal hangman where
 - create custom answers and hints
 - create custom messaging ("Oh no, looks like you're out of guesses" versus "You guessed that letter already, dummy"
 
-![](images/hangman.py)
+![](images/hangman.png)
 
 During the COVID-19 crisis, my family started having weekly video conferencing calls where we'd talk about Netflix shows and current events.
 
