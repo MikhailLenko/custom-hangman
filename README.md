@@ -3,7 +3,7 @@
 TL;DR: Play hangman from command line interface. But unlike normal hangman where you guess a single generic word ('doorbell'), you are able to:
 - assign players to specific answers 
 - create custom answers and hints
-- create custom messaging ("Oh no, looks like you're out of guesses" versus "You guessed that letter already, dummy"
+- create custom messaging
 
 ![](images/hangman.png)
 
